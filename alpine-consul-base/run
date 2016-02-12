@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run -i -t hypoalex/alpine-consul-base /bin/sh

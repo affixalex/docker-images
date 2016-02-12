@@ -1,0 +1,20 @@
+#!/bin/sh
+
+AGENT=`getent hosts consul-agent`
+if [ -z "$AGENT" ]; then
+	echo "Consul Agent detected. Using Consul DNS..."
+	go-dnsmasq --default-resolver \
+                   --search-domains consul.service \
+		   --append-search-domains \
+		   --hostsfile=/etc/hosts \
+		   --stubzones service.consul/127.0.0.1:8600 \
+	           --nameservers 8.8.8.8,8.8.4.4
+else
+	echo "No Consul Agent detected!"
+	go-dnsmasq --default-resolver \
+	           --append-search-domains \
+                   --hostsfile=/etc/hosts \
+		   --nameservers 8.8.8.8,8.8.4.4
+	
+fi;
+

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run --link consul-agent hypoalex/alpine-consul-nodejs

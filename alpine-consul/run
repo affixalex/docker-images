@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run --dns 8.8.8.8 --dns 8.8.4.4 --dns-search=service.consul --name "consul-agent"  hypoalex/alpine-consul
