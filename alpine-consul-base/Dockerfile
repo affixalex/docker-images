@@ -1,7 +1,7 @@
 FROM hypoalex/alpine-base:latest
 
 ENV GOPATH=/go GOMAXPROCS=2
-ENV CONSUL_VERSION=0.6.3
+ENV CONSUL_VERSION=0.6.4
 ENV XC_ARCH="amd64"
 ENV XC_OS="linux"
 

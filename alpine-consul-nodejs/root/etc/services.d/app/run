@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-# cd into our directory
-cd /app
-
-# start our node.js application
-exec node server.js;
