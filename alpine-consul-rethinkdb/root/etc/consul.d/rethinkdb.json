@@ -1,0 +1,6 @@
+{
+  "service": {
+    "name": "rethinkb",
+    "tags": ["rethinkdb", "db"]
+  }
+}
