@@ -1,6 +1,7 @@
 {
   "service": {
     "name": "rethinkb",
-    "tags": ["rethinkdb", "db"]
+    "tags": ["rethinkdb", "db"],
+    "port": 29015
   }
 }

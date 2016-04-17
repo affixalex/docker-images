@@ -7,5 +7,5 @@ RUN apk add rethinkdb --update-cache \
 
 ADD root /
 
-#    process cluster webui
-EXPOSE 28015 29015 8080
+#    process cluster
+EXPOSE 28015 29015
